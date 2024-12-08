@@ -5,7 +5,9 @@ export function App() {
   
   return (
     <main className='h-screen bg-zinc-50 flex items-center justify-center flex-col gap-6'>
-      <form action='' className='flex flex-col gap-4 w-full max-w-md'>
+      <form
+        className='flex flex-col gap-4 w-full max-w-md'
+      >
         <div className='flex flex-col gap-1'>
           <label htmlFor='email'>E-mail</label>
           <input
@@ -35,7 +37,7 @@ export function App() {
       <hr className='border border-b-zinc-200 w-full max-w-md' />
 
       <div className='bg-gray-800 text-white p-4 rounded-lg overflow-x-auto w-full max-w-md'>
-        <pre>{JSON.stringify(output, null, 2)}</pre>
+        <pre>{output}</pre>
       </div>
     </main>
   )
